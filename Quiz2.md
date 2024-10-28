@@ -1,196 +1,224 @@
 
----
 
 ### **Data Types, Variables, Constants, Operators, Casting**
 
-**1. Which of these is NOT a primitive data type in Java?**  
-   - A) int  
-   - B) double  
-   - C) String  
-   - D) boolean  
+**1. Which of these can store the largest range of values?**  
+   - A) `int`  
+   - B) `short`  
+   - C) `byte`  
+   - D) `double`  
 
-**2. What is the result of casting `(int) 4.9`?**  
-   - A) 5  
-   - B) 4  
-   - C) 4.9  
-   - D) An error  
+**2. What will be the result of the following operation: `10 / 4` in Java?**  
+   - A) 2.5  
+   - B) 2  
+   - C) 2.0  
+   - D) 3  
 
-**3. Which operator is used to concatenate two strings?**  
-   - A) `+`  
-   - B) `&`  
-   - C) `||`  
-   - D) `*`  
+**3. Which of the following types can hold a single Unicode character?**  
+   - A) `char`  
+   - B) `byte`  
+   - C) `short`  
+   - D) `boolean`  
 
-**4. Which of the following is a valid constant declaration in Java?**  
-   - A) `const int MAX = 10;`  
-   - B) `final int MAX = 10;`  
-   - C) `MAX int = 10;`  
-   - D) `constant int MAX = 10;`
+**4. In Java, what is the modulus operator `%` used for?**  
+   - A) Division  
+   - B) Addition  
+   - C) Subtraction  
+   - D) Remainder  
 
 ---
 
 ### **String Class**
 
-**1. Which method is used to get the length of a string in Java?**  
-   - A) `length()`  
-   - B) `size()`  
-   - C) `count()`  
-   - D) `getLength()`  
+**1. Which method can be used to compare two strings lexicographically in Java?**  
+   - A) `compare()`  
+   - B) `equals()`  
+   - C) `compareTo()`  
+   - D) `==`  
 
-**2. What is the result of `"Java".substring(1, 3)`?**  
-   - A) "J"  
-   - B) "Ja"  
-   - C) "av"  
-   - D) "a"  
+**2. What is the output of `"hello".toUpperCase()`?**  
+   - A) `hello`  
+   - B) `HELLO`  
+   - C) `Hello`  
+   - D) `hElLo`  
 
-**3. Which method checks if two strings are equal in Java?**  
-   - A) `equals()`  
-   - B) `==`  
-   - C) `compare()`  
-   - D) `isEqual()`  
+**3. Which method would you use to find the position of the first occurrence of a character in a string?**  
+   - A) `charAt()`  
+   - B) `substring()`  
+   - C) `indexOf()`  
+   - D) `contains()`  
+
+**4. What does `"Java".concat("Programming")` return?**  
+   - A) `Java Programming`  
+   - B) `JavaProgramming`  
+   - C) `Java`  
+   - D) `ProgrammingJava`  
 
 ---
 
 ### **Conditional Statements, Visibility**
 
-**1. Which keyword is used to make a variable visible only within its own class?**  
-   - A) `public`  
-   - B) `protected`  
-   - C) `private`  
-   - D) `default`  
-
-**2. What is the output of this code if `int x = 5; if (x > 5) { System.out.println("Greater"); } else { System.out.println("Smaller or Equal"); }`?**  
-   - A) "Greater"  
-   - B) "Smaller or Equal"  
+**1. What will `if ("test" == "test") { ... }` evaluate to?**  
+   - A) True  
+   - B) False  
    - C) An error  
-   - D) Nothing  
+   - D) It depends on memory allocation  
+
+**2. Which access modifier makes a variable accessible to all classes in all packages?**  
+   - A) `protected`  
+   - B) `default`  
+   - C) `public`  
+   - D) `private`  
+
+**3. What is the output of this code if `int y = 9; if (y != 10) { System.out.println("Not Ten"); } else { System.out.println("Ten"); }`?**  
+   - A) "Ten"  
+   - B) "Not Ten"  
+   - C) An error  
+   - D) No output  
 
 ---
 
 ### **Loops**
 
-**1. Which loop is guaranteed to run at least once in Java?**  
-   - A) `for` loop  
-   - B) `while` loop  
-   - C) `do-while` loop  
-   - D) None of the above  
+**1. Which keyword can be used to exit a loop early in Java?**  
+   - A) `return`  
+   - B) `continue`  
+   - C) `break`  
+   - D) `exit`  
 
-**2. What is the correct syntax for a `for` loop that prints numbers 1 to 10?**  
-   - A) `for (int i = 1; i <= 10; i++)`  
-   - B) `for (int i = 0; i < 10; i++)`  
-   - C) `for (i = 1; i < 10; i++)`  
-   - D) `for (int i; i < 10; i++)`  
+**2. Which of the following will create an infinite loop?**  
+   - A) `for (int i = 0; i < 10; i++)`  
+   - B) `while (true)`  
+   - C) `for (int i = 0; i >= 0; i--)`  
+   - D) `for (int i = 0; i > -10; i++)`  
+
+**3. What does the `continue` statement do in a loop?**  
+   - A) Exits the loop  
+   - B) Skips to the next iteration  
+   - C) Ends the program  
+   - D) Starts the loop over  
 
 ---
 
 ### **Arrays**
 
-**1. Which of the following correctly declares an array in Java?**  
-   - A) `int arr = new int[5];`  
-   - B) `int[] arr = new int[5];`  
-   - C) `int arr[5];`  
-   - D) `arr = int[5];`  
+**1. Which method will return the length of an array named `arr`?**  
+   - A) `arr.length()`  
+   - B) `arr.size()`  
+   - C) `arr.length`  
+   - D) `arr.getLength()`  
 
-**2. How do you access the 5th element in an array named `arr`?**  
-   - A) `arr[5]`  
-   - B) `arr[4]`  
-   - C) `arr[6]`  
-   - D) `arr[5 - 1]`
+**2. What will `int[] arr = {1, 2, 3, 4}; System.out.println(arr[4]);` print?**  
+   - A) 4  
+   - B) 3  
+   - C) An error  
+   - D) 0  
+
+**3. How do you create a 2D array with 3 rows and 4 columns?**  
+   - A) `int[][] arr = new int[3][4];`  
+   - B) `int[][] arr = new int[4][3];`  
+   - C) `int arr = new int[3][4];`  
+   - D) `int[][] arr = int[3][4];`  
 
 ---
 
 ### **OOP (Class, Object, State, Behavior)**
 
-**1. In Java, what is the keyword to create a new object?**  
-   - A) `class`  
-   - B) `object`  
-   - C) `new`  
-   - D) `public`  
+**1. Which principle allows the same method name to have different behaviors in Java?**  
+   - A) Encapsulation  
+   - B) Abstraction  
+   - C) Inheritance  
+   - D) Polymorphism  
 
-**2. Which of these best describes an object in Java?**  
-   - A) A template or blueprint  
-   - B) A type of method  
-   - C) An instance of a class  
-   - D) A Java keyword  
+**2. What does the `this` keyword represent in a class?**  
+   - A) The current method  
+   - B) The superclass  
+   - C) The current instance of the class  
+   - D) The parent class  
+
+**3. Which of the following best describes encapsulation?**  
+   - A) Hiding the internal state and requiring all interactions to be performed through an object's methods  
+   - B) Using methods from a superclass  
+   - C) Allowing classes to have multiple forms  
+   - D) Defining classes without specifying implementation details  
 
 ---
 
 ### **Fields, Methods, Constructors, Packages, Imports**
 
-**1. What is a constructor in Java?**  
-   - A) A method that returns an object  
-   - B) A special method used to initialize objects  
-   - C) A field that stores object data  
-   - D) A package name  
+**1. Which of these statements is true about constructors?**  
+   - A) Constructors must have a return type  
+   - B) Constructors cannot be overloaded  
+   - C) Constructors are called automatically when an object is created  
+   - D) Constructors cannot be declared `public`  
 
-**2. Which statement is used to import all classes in a package?**  
-   - A) `import package.*;`  
-   - B) `import package;`  
-   - C) `import all package.*;`  
-   - D) `import package.all;`  
+**2. Which import statement is correct for importing only the `List` class from `java.util`?**  
+   - A) `import java.util;`  
+   - B) `import java.util.List;`  
+   - C) `import List from java.util;`  
+   - D) `import util.java.List;`  
 
 ---
 
 ### **Varargs**
 
-**1. What does `int... nums` represent in a method parameter?**  
-   - A) A variable of type `int`  
-   - B) An array of `int` with flexible size  
-   - C) A constant `int`  
-   - D) A single integer  
+**1. How do you declare a method that takes a variable number of `String` arguments?**  
+   - A) `public void method(String varargs...)`  
+   - B) `public void method(String... varargs)`  
+   - C) `public void method(...String varargs)`  
+   - D) `public void method(varargs... String)`  
 
-**2. How many varargs parameters can you have in a single method?**  
-   - A) One, and it must be the last parameter  
-   - B) Any number, anywhere in the parameter list  
-   - C) One, and it must be the first parameter  
-   - D) None, varargs are not allowed  
+**2. Which of the following correctly calls a method `display(String... values)`?**  
+   - A) `display("Hello", "World");`  
+   - B) `display(new String[] {"Hello", "World"});`  
+   - C) `display("Hello");`  
+   - D) All of the above  
 
 ---
 
 ### **Date, Time**
 
-**1. Which class is used to represent a date without time in Java 8?**  
-   - A) `Date`  
-   - B) `LocalDate`  
-   - C) `LocalDateTime`  
-   - D) `Calendar`  
+**1. Which method would you use to get the current date in Java 8?**  
+   - A) `LocalDate.now()`  
+   - B) `Date.now()`  
+   - C) `Calendar.getInstance()`  
+   - D) `Instant.now()`  
 
-**2. Which of the following can be used to measure time duration between events in Java 8?**  
-   - A) `Instant`  
-   - B) `Period`  
-   - C) `TimeSpan`  
-   - D) `Timer`  
+**2. Which class in Java 8 represents a time zone offset?**  
+   - A) `ZoneId`  
+   - B) `OffsetTime`  
+   - C) `TimeZone`  
+   - D) `ZoneOffset`  
 
 ---
 
 ### **Regular Expressions**
 
-**1. Which class in Java provides methods to work with regular expressions?**  
-   - A) `Pattern`  
-   - B) `Matcher`  
-   - C) `Regex`  
-   - D) Both A and B  
+**1. What does the regular expression `\\w+` match?**  
+   - A) One or more word characters (letters, digits, underscores)  
+   - B) One or more whitespace characters  
+   - C) Any digit  
+   - D) Any punctuation  
 
-**2. What does the expression `\\d+` represent?**  
-   - A) One or more digits  
-   - B) Zero or more digits  
-   - C) Any letter  
-   - D) Any whitespace character  
+**2. Which method in the `Matcher` class is used to find a pattern in a string?**  
+   - A) `matches()`  
+   - B) `find()`  
+   - C) `group()`  
+   - D) `pattern()`  
 
 ---
 
 ### **Static Fields, Methods, and Classes**
 
-**1. Which of these statements about static methods is true?**  
-   - A) They can access instance variables  
-   - B) They belong to an instance of a class  
-   - C) They can only access static fields and methods  
-   - D) They must return a value  
+**1. Which of the following statements about a static field is correct?**  
+   - A) It is created only once for all instances of a class  
+   - B) It is created separately for each instance of the class  
+   - C) It cannot be accessed from static methods  
+   - D) It must be final  
 
-**2. When is a static variable initialized?**  
-   - A) When the class is first loaded  
-   - B) When the first object is created  
-   - C) When the last object is destroyed  
-   - D) When the program ends  
+**2. Which statement will call a static method `printMessage` from class `Printer`?**  
+   - A) `Printer.printMessage();`  
+   - B) `new Printer().printMessage();`  
+   - C) `Printer().printMessage();`  
+   - D) `printMessage();`  
 
---- 
